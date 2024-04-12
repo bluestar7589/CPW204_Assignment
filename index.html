@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate MPG</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/mpg.css">
+    <script src="/js/mpgCalc.js"></script>
+    <title>MPG Calc with Functions</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Week 1 - MPG Calc (Typescript)</h1>
+        </header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home Page</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div>
+                    <p>
+                        Objective: The goal of this application is to gain more experience with DOM manipulation and
+                        practice
+                        creating and using functions. Also will use Typescript instead of Javascript.
+                        Application: You need to create a MPG calculator that takes the Miles Driven and Gallons of gas
+                        used
+                        from the user. Then display the resulting MPG. DO NOT use alert or prompt to get input or
+                        display
+                        results.
+                    </p>
+                </div>
+                <div id="layoutCalculator">
+                    <h1>Calculate Miles Per Gallon</h1>
+                    <label for="miles">Miles Driven:</label>
+                    <input type="text" id="miles"><span>*</span><br>
+                    <label for="gallons">Gallons of Gas Used:</label>
+                    <input type="text" id="gallons"><span>*</span><br>
+                    <label for="mpg">Miles Per Gallon</label>
+                    <input type="text" id="mpg" disabled><br>
+                    <label>&nbsp;</label>
+                    <input type="button" id="calculate" value="Calculate MPGs"><br>
+                    <label>&nbsp;</label>
+                    <input type="button" id="clear" value="Reset Form" onclick="clearForm()"><br>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <p>
+                Copyright &copy; 2024 Nguyen, Thien (Advance JavaScript's Assignment)
+                <a href="https://github.com/bluestar7589" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/nguyen-thien-5b2a5972/" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
