@@ -1,0 +1,84 @@
+/*Set default font for document*/
+head, body{
+    font-family: sans-serif;
+}
+
+/*Adjust font size for all heading*/
+h1 {
+    font-size: 2em;
+}
+
+/*Set font size and other attributes for header h1*/
+header > h1{
+    text-indent: 0.4em;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 2em;
+}
+header > h1{
+    padding-top: 20px;
+}
+
+
+header{
+    height: 110px;
+    padding-left: 15px;
+    border-bottom: 2px solid black;
+    /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+    background-image: linear-gradient(25deg,blue,silver 50%,purple);
+     /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+}
+
+body > div {
+    width: 1200px;
+    background-color: white;
+    border-color: black;
+    box-shadow: 4px 4px 8px 12px black;
+    /*to set body in center*/
+    margin: auto;
+}
+
+/*reduce font size and make it center*/
+footer{
+    height: 50px;
+    font-size: 1em;
+    text-align: center;
+    display: grid;
+    /*Set the item(s) in center of footer in horizontal and vertical along with Display: grid*/
+    place-items: center; 
+    border-top: 5px solid black;
+    /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+    background-image: linear-gradient(75deg,purple,silver 50%,blue);    
+    clear: left;
+}
+
+main{
+    padding-left: 25px;
+    width: 80%;
+    /* float: left; because we use the display:table so dont need for float*/
+    /* This code below will include all padding/margin... to size of box*/
+    box-sizing: border-box;
+    display: table-cell; /* Make elements inside the container behave like table cells */
+    vertical-align: top; /* Align the content of the table cells to the top */
+}
+nav{
+    width: 20%;
+    /* float: left; because we use the display:table so dont need for float*/
+    /* This code below will include all padding/margin... to size of box*/
+    box-sizing: border-box;
+    display: table-cell;/* Make elements inside the container behave like table cells */
+    vertical-align: top; /* Align the content of the table cells to the top */
+}
+/*To make 2 tag nav and main have same height.*/
+
+body > div > div > main > div > table, tbody, tr, td {
+    border-collapse: collapse;
+    width: 98.5879%;
+    border: 1px solid black;
+}
+
+body > div > div > main > div > tbody, tr, td {
+    border-collapse: collapse;
+    width: 20%;
+    border: 1px solid black;
+}
